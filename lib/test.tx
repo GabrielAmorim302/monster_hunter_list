@@ -1,0 +1,33 @@
+ key: scaffoldKey,
+      backgroundColor: Color(0xFF584E4E),
+      body: SafeArea(
+        top: true,
+        child: Stack(
+          children: [
+            Align(
+              alignment: AlignmentDirectional(0.00, -0.50),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(0),
+                child: Image.asset(
+                  'assets/images/pngegg.png',
+                  width: 325,
+                  height: 249,
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+            Align(
+              alignment: AlignmentDirectional(0.00, 0.10),
+              child: Text(
+                'List Monster',
+                style:(
+                      fontFamily: 'Readex Pro',
+                      fontSize: 32,
+                      fontWeight: FontWeight.w800,
+                    ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
